@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners -->
+  <meta name="description"
+    content="Stanford ML and Communications Lab led by Prof. John M. Cioffi - Research in Machine Learning, Dynamic Spectrum Management, Communications Modulation and Coding">
+  <meta property="og:title" content="Stanford ML and Communications Lab - Cioffi Group" />
+  <meta property="og:description"
+    content="Research in Machine Learning, Dynamic Spectrum Management, and Communications at Stanford University under Prof. John M. Cioffi" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <meta property="og:image" content="static/images/mlc_crop.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta name="twitter:title" content="Stanford ML and Communications Lab - Cioffi Group">
+  <meta name="twitter:description"
+    content="Research in Machine Learning, Dynamic Spectrum Management, and Communications at Stanford University under Prof. John M. Cioffi">
+  <meta name="twitter:image" content="static/images/mlc_crop.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords"
+    content="Machine Learning, Dynamic Spectrum Management, Communications, John Cioffi, Stanford, Research, Deep Learning, 5G, 6G, Signal Processing">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Stanford ML and Communications Lab - Cioffi Group</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+4:400,600,700|Google+Sans|Noto+Sans|Castoro"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <style>
+    body {
+      font-family: 'Source Serif 4', serif;
+    }
+
+    .lab-logo {
+      max-height: 200px;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+
+    .hero-content {
+      padding: 2rem 0;
+    }
+
+    .lab-description {
+      color: #666;
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 1rem auto;
+      line-height: 1.5;
+    }
+
+    .lab-director {
+      color: #8C1515;
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      font-weight: 600;
+    }
+
+    .lab-director a {
+      color: #8C1515;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-bottom 0.2s ease;
+    }
+
+    .lab-director a:hover {
+      border-bottom: 1px solid #8C1515;
+    }
+
+    .paper-card {
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      height: 100%;
+      border-radius: 8px;
+      border: 1px solid #e1e5e9;
+    }
+
+    .paper-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .paper-title {
+      color: #2c3e50;
+      font-weight: 600;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+    }
+
+    .paper-authors {
+      color: #7f8c8d;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .paper-venue {
+      color: #8C1515;
+      font-weight: 500;
+      font-size: 0.85rem;
+    }
+
+    .award-badge {
+      background: linear-gradient(135deg, #ff6b6b, #feca57);
+      color: white;
+      padding: 0.25rem 0.5rem;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-top: 0.5rem;
+      display: inline-block;
+    }
+
+    .research-areas {
+      background: #8C1515;
+      color: white;
+    }
+
+    .recent-publications {
+      background: #8C1515;
+      color: white;
+    }
+
+    .area-tag {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      margin: 0.25rem;
+      display: inline-block;
+      backdrop-filter: blur(10px);
+    }
+
+    .global-footer {
+      background-color: #8c1515;
+      color: white;
+      padding: 2rem 0;
+      margin-top: 3rem;
+    }
+
+    .global-footer a {
+      color: #ffd9d9;
+    }
+
+    .global-footer a:hover {
+      color: white;
+    }
+
+    .global-footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .global-footer li {
+      display: inline;
+      margin-right: 1.5rem;
+    }
+
+    .global-footer .copyright {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .hero-gradient {
+      background: white;
+    }
+
+    .button.is-macro {
+      font-size: 0.9rem;
+      padding: 0.58em 1.25em;
+      height: 2.28em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero hero-gradient">
+    <div class="hero-body hero-content">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <img src="static/images/mlc_crop.png" alt="Stanford ML and Communications Lab" class="lab-logo">
+            <p class="lab-description">
+              Our lab focuses on developing novel machine learning algorithms for next-generation wireless systems,
+              communications modulation and coding, signal processing and communication theory.
+            </p>
+            <p class="lab-director">
+              Director: <a href="https://cioffi-group.stanford.edu/" target="_blank">John M. Cioffi</a><br>
+              <span style="font-size: 1.1rem; font-weight: 400; color: #666;">Hitachi Professor Emeritus of Engineering
+                [Recalled]</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Areas Section -->
+  <section class="section research-areas">
+    <div class="container is-max-desktop">
+      <div class="has-text-centered">
+        <h2 class="title is-3 has-text-white">Research Areas</h2>
+        <div style="margin-top: 1rem;">
+          <span class="area-tag">Dynamic spectrum management</span>
+          <span class="area-tag">Communications modulation & coding</span>
+          <span class="area-tag">Signal processing</span>
+          <span class="area-tag">Wireless networks</span>
+          <span class="area-tag">5G/6G Systems</span>
+          <span class="area-tag">Digital transmission</span>
+          <span class="area-tag">Resource optimization</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="section is-light">
+    <div class="container is-max-desktop">
+      <div class="has-text-centered" style="margin-bottom: 2rem;">
+        <h2 class="title is-3">Lab Leadership & Recognition</h2>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content has-text-centered">
+            <p style="line-height: 1.6; font-size: 1.1rem;">
+              Our lab is led by <strong>Prof. John M. Cioffi</strong>, recipient of the <strong>2023 National Technology
+                and Innovation Medal</strong> from President Biden,
+              <strong>Marconi Fellow (2006)</strong>, <strong>Member of the National Academy of Engineering
+                (2001)</strong>, and holder of numerous IEEE awards including the
+              <strong>Alexander Graham Bell Medal (2010)</strong>. Prof. Cioffi is widely recognized as the "Father of
+              DSL" and a pioneer in digital communications.
+            </p>
+            <div class="buttons is-centered" style="margin-top: 1.5rem;">
+              <a href="https://cioffi-group.stanford.edu/" target="_blank" class="button"
+                style="background-color: #8C1515; color: white;">
+                <span class="icon">
+                  <i class="fas fa-external-link-alt"></i>
+                </span>
+                <span>Cioffi Group</span>
+              </a>
+              <a href="https://cioffi-group.stanford.edu/group.html" target="_blank" class="button is-light">
+                <span class="icon">
+                  <i class="fas fa-users"></i>
+                </span>
+                <span>Research Group</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section class="section recent-publications">
+    <div class="container is-max-desktop">
+      <div class="has-text-centered" style="margin-bottom: 3rem;">
+        <h2 class="title is-3 has-text-white">Recent Publications</h2>
+        <p class="subtitle is-5 has-text-white">Explore our latest research contributions</p>
+      </div>
+
+      <div class="columns is-multiline">
+
+        <!-- Paper 1: Hierarchical Wireless -->
+        <div class="column is-6">
+          <div class="box paper-card">
+            <h3 class="paper-title">
+              <a href="hierarchical_wireless.html" class="has-text-dark">
+                Hierarchical Deep Reinforcement Learning for Spectrum Resource Optimization in Integrated Terrestrial
+                and Non-Terrestrial Networks
+              </a>
+            </h3>
+            <p class="paper-authors">
+              Muhammad Ahmed Mohsin, Hassan Rizwan, Muhammad Umer, Sagnik Bhattacharya, Ahsan Bilal, John M. Cioffi
+            </p>
+            <p class="paper-venue">AAAI'25 Workshop</p>
+            <div class="buttons" style="margin-top: 1rem;">
+              <a href="hierarchical_wireless.html" class="button is-macro"
+                style="background-color: #8C1515; color: white;">
+                <span class="icon">
+                  <i class="fas fa-eye"></i>
+                </span>
+                <span>View Paper</span>
+              </a>
+              <a href="https://arxiv.org/pdf/2501.09212.pdf" target="_blank" class="button is-light is-macro">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>arXiv</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 2: Meta-Thinking LLMs -->
+        <div class="column is-6">
+          <div class="box paper-card">
+            <h3 class="paper-title">
+              <a href="meta_thinking_llms.html" class="has-text-dark">
+                Meta-Thinking in LLMs via Multi-Agent Reinforcement Learning: A Survey
+              </a>
+            </h3>
+            <p class="paper-authors">
+              Ahsan Bilal, Muhammad Ahmed Mohsin, Muhammad Umer, Muhammad Awais Khan Bangash, Muhammad Ali Jamshed
+            </p>
+            <p class="paper-venue">Submitted to IEEE Transactions on Artificial Intelligence</p>
+            <div class="buttons" style="margin-top: 1rem;">
+              <a href="meta_thinking_llms.html" class="button is-macro"
+                style="background-color: #8C1515; color: white;">
+                <span class="icon">
+                  <i class="fas fa-eye"></i>
+                </span>
+                <span>View Paper</span>
+              </a>
+              <a href="https://arxiv.org/pdf/2504.14520" target="_blank" class="button is-light is-macro">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>arXiv</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 3: RAG Wireless -->
+        <div class="column is-6">
+          <div class="box paper-card">
+            <h3 class="paper-title">
+              <a href="rag_wireless.html" class="has-text-dark">
+                Retrieval Augmented Generation with Multi-Modal LLM Framework for Wireless Environments
+              </a>
+            </h3>
+            <p class="paper-authors">
+              Muhammad Ahmed Mohsin*, Ahsan Bilal*, Sagnik Bhattacharya, John M. Cioffi
+            </p>
+            <p class="paper-venue">International Conference on Communications 2025 Workshop</p>
+            <span class="award-badge">🎉 Best Workshop Paper Award 🎉</span>
+            <div class="buttons" style="margin-top: 1rem;">
+              <a href="rag_wireless.html" class="button is-macro" style="background-color: #8C1515; color: white;">
+                <span class="icon">
+                  <i class="fas fa-eye"></i>
+                </span>
+                <span>View Paper</span>
+              </a>
+              <a href="https://arxiv.org/pdf/2503.07670" target="_blank" class="button is-light is-macro">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>arXiv</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 4: Task Aware -->
+        <div class="column is-6">
+          <div class="box paper-card">
+            <h3 class="paper-title">
+              <a href="task_aware.html" class="has-text-dark">
+                Task and Perception-aware Distributed Source Coding for Correlated Speech under Bandwidth-constrained
+                Channels
+              </a>
+            </h3>
+            <p class="paper-authors">
+              Sagnik Bhattacharya, Muhammad Ahmed Mohsin, Ahsan Bilal, John M. Cioffi
+            </p>
+            <p class="paper-venue">AAAI'25 Workshop</p>
+            <div class="buttons" style="margin-top: 1rem;">
+              <a href="task_aware.html" class="button is-macro" style="background-color: #8C1515; color: white;">
+                <span class="icon">
+                  <i class="fas fa-eye"></i>
+                </span>
+                <span>View Paper</span>
+              </a>
+              <a href="https://arxiv.org/pdf/2501.17879" target="_blank" class="button is-light is-macro">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>arXiv</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div class="columns">
+            <div class="column is-6 has-text-centered">
+              <h2 class="title is-4">Contact Information</h2>
+              <div class="content" style="font-size: 1.1rem;">
+                <p><strong>Prof. John M. Cioffi</strong><br>
+                  Room 363, David Packard Electrical Engineering<br>
+                  350 Jane Stanford Way, MC 9515<br>
+                  Stanford, CA 94305-9515<br>
+                  Phone: +1 (650) 723-2150<br>
+                  <a href="mailto:cioffi@stanford.edu" style="color: #8C1515;">cioffi@stanford.edu</a>
+                </p>
+              </div>
+            </div>
+            <div class="column is-6 has-text-centered">
+              <h2 class="title is-4">Administrative Contact</h2>
+              <div class="content" style="font-size: 1.1rem;">
+                <p><strong>Helen (Wentong) Niu</strong><br>
+                  Administrative Assistant<br>
+                  Room 310, David Packard Electrical Engineering<br>
+                  350 Jane Stanford Way, MC 9515<br>
+                  Stanford, CA 94305-9515<br>
+                  Phone: +1 (650) 723-8121<br>
+                  <a href="mailto:helen.niu@stanford.edu" style="color: #8C1515;">helen.niu@stanford.edu</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="has-text-centered" style="margin-top: 2rem;">
+            <p class="is-size-5">
+              Interested in joining our research group or collaborating with us?
+            </p>
+            <div class="buttons is-centered" style="margin-top: 1.5rem;">
+              <a href="mailto:cioffi@stanford.edu" class="button" style="background-color: #8C1515; color: white;">
+                <span class="icon">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <span>Email Prof. Cioffi</span>
+              </a>
+              <a href="https://cioffi-group.stanford.edu/dsm/" target="_blank" class="button is-light">
+                <span class="icon">
+                  <i class="fas fa-flask"></i>
+                </span>
+                <span>Research Activities</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global footer snippet start -->
+  <div id="global-footer" class="global-footer">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-2">
+          <div id="bottom-logo">
+            <a href="https://www.stanford.edu/">
+              <img src="https://www.stanford.edu/su-identity/images/footer-stanford-logo@2x.png"
+                alt="Stanford University" width="105" height="49">
+            </a>
+          </div>
+        </div>
+        <!-- #bottom-logo end -->
+        <div class="column is-10">
+          <div id="bottom-text">
+            <ul>
+              <li class="home"><a href="https://www.stanford.edu/">SU Home</a></li>
+              <li class="maps alt"><a href="https://visit.stanford.edu/plan/maps.html">Maps &amp; Directions</a></li>
+              <li class="search-stanford"><a href="https://www.stanford.edu/search/">Search Stanford</a></li>
+              <li class="terms alt"><a href="https://www.stanford.edu/site/terms.html">Terms of Use</a></li>
+              <li class="emergency-info"><a href="https://emergency.stanford.edu/">Emergency Info</a></li>
+            </ul>
+            <p class="copyright vcard" style="margin-top: 1rem;">© <span class="fn org">Stanford University</span>,
+              <span class="adr"> <span class="locality">Stanford</span>, <span class="region">California</span> <span
+                  class="postal-code">94305</span></span>.&nbsp;&nbsp;
+              <span id="copyright-complaint"><a href="https://www.stanford.edu/group/security/dmca.html"
+                  class="copyright-complaint">Copyright Complaints</a></span>
+            </p>
+          </div> <!-- .bottom-text end -->
+        </div>
+      </div>
+    </div> <!-- .container end -->
+  </div> <!-- global-footer end -->
+  <!-- Global footer snippet end -->
+
+  <script>
+    jQuery(document).ready(function ($) {
+
+      $('a[data-rel=ext]').attr('target', '_blank');
+
+      $(".fancybox").fancybox({
+        prevEffect: 'elastic',
+        nextEffect: 'elastic',
+        openEffect: 'elastic',
+        closeEffect: 'elastic',
+        helpers: {
+          title: {
+            type: 'outside'
+          },
+          thumbs: {
+            width: 150,
+            height: 150
+          }
+        }
+      });
+      $('#header #stanford-branding')
+        .attr('title', 'Stanford Home')
+        .on('click', function (e) {
+          e.preventDefault();
+          window.open('https://www.stanford.edu/', '_blank');
+        });
+    });
+  </script>
+
+</body>
+
+</html>
