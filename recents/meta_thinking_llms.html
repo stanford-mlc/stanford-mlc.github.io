@@ -10,7 +10,7 @@
   <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
   <meta property="og:url" content="URL OF THE WEBSITE" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image" content="../static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
@@ -18,31 +18,32 @@
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:image" content="../static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Meta Thinking LLMs</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Source+Serif+4:400,600,700|Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <title>Hierarchical Wireless</title>
+  <link rel="icon" type="image/x-icon" href="../static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+4:400,600,700|Google+Sans|Noto+Sans|Castoro"
+    rel="stylesheet">
 
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="../static/css/bulma.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="../static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="../static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
-  
+  <script defer src="../static/js/fontawesome.all.min.js"></script>
+  <script src="../static/js/bulma-carousel.min.js"></script>
+  <script src="../static/js/bulma-slider.min.js"></script>
+  <script src="../static/js/index.js"></script>
+
   <style>
     body {
       font-family: 'Source Serif 4', serif;
@@ -72,16 +73,19 @@
                 <a href="https://muhd-umer.github.io/" target="_blank">Muhammad Umer</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=Ci1DR9MAAAAJ" target="_blank">Muhammad Awais Khan Bangash</a><sup>3</sup>,
+                <a href="https://scholar.google.com/citations?user=Ci1DR9MAAAAJ" target="_blank">Muhammad Awais Khan
+                  Bangash</a><sup>3</sup>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=at4MvYMAAAAJ" target="_blank">Muhammad Ali Jamshed</a><sup>4</sup>
+                <a href="https://scholar.google.com/citations?user=at4MvYMAAAAJ" target="_blank">Muhammad Ali
+                  Jamshed</a><sup>4</sup>
               </span>
             </div>
 
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <sup>1</sup>University of Oklahoma, <sup>2</sup>Stanford University, <sup>3</sup>Oklahoma State University, <sup>4</sup>University of Glasgow<br>
+                <sup>1</sup>University of Oklahoma, <sup>2</sup>Stanford University, <sup>3</sup>Oklahoma State
+                University, <sup>4</sup>University of Glasgow<br>
                 Submitted to IEEE Transactions on Artificial Intelligence
               </span>
             </div>
@@ -122,11 +126,10 @@
   <!-- End teaser video -->
   <div class="container is-max-desktop">
     <div class="hero-body">
-        <h2 class="title has-text-centered">Meta Thinking in LLMs</h2>
-      <img src="static/meta_thinking_llms/meta_thinking.png" alt="Hierarchical Framework Poster"
-        style="width:100%;" />
+      <h2 class="title has-text-centered">Meta Thinking in LLMs</h2>
+      <img src="meta_thinking_llms/meta_thinking.png" alt="Hierarchical Framework Poster" style="width:100%;" />
       <h2 class="subtitle has-text-centered">
-      Overview of RL Techniques Enabling Meta-Thinking in Language Models
+        Overview of RL Techniques Enabling Meta-Thinking in Language Models
       </h2>
     </div>
   </div>
@@ -139,7 +142,18 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-            This survey explores the development of metathinking capabilities in Large Language Models (LLMs) from a Multi-Agent Reinforcement Learning (MARL) perspective. Meta-thinking—self-reflection, assessment, and control of thinking processes—is an important next step in enhancing LLM reliability, flexibility, and performance, particularly for complex or high-stakes tasks. The survey begins by analyzing current LLM limitations, such as hallucinations and the lack of internal self-assessment mechanisms. It then talks about newer methods, including RL from human feedback (RLHF), self-distillation, and chain-of-thought prompting, and each of their limitations. The crux of the survey is to talk about how multi-agent architectures, namely supervisor-agent hierarchies, agent debates, and theory of mind frameworks, can emulate human-like introspective behavior and enhance LLM robustness. By exploring reward mechanisms, self-play, and continuous learning methods in MARL, this survey gives a comprehensive roadmap to building introspective, adaptive, and trustworthy LLMs. Evaluation metrics, datasets, and future research avenues, including neuroscience-inspired architectures and hybrid symbolic reasoning, are also discussed.
+              This survey explores the development of metathinking capabilities in Large Language Models (LLMs) from a
+              Multi-Agent Reinforcement Learning (MARL) perspective. Meta-thinking—self-reflection, assessment, and
+              control of thinking processes—is an important next step in enhancing LLM reliability, flexibility, and
+              performance, particularly for complex or high-stakes tasks. The survey begins by analyzing current LLM
+              limitations, such as hallucinations and the lack of internal self-assessment mechanisms. It then talks
+              about newer methods, including RL from human feedback (RLHF), self-distillation, and chain-of-thought
+              prompting, and each of their limitations. The crux of the survey is to talk about how multi-agent
+              architectures, namely supervisor-agent hierarchies, agent debates, and theory of mind frameworks, can
+              emulate human-like introspective behavior and enhance LLM robustness. By exploring reward mechanisms,
+              self-play, and continuous learning methods in MARL, this survey gives a comprehensive roadmap to building
+              introspective, adaptive, and trustworthy LLMs. Evaluation metrics, datasets, and future research avenues,
+              including neuroscience-inspired architectures and hybrid symbolic reasoning, are also discussed.
             </p>
           </div>
         </div>
@@ -157,17 +171,21 @@
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item">
             <!-- Your image here -->
-            <img src="static/meta_thinking_llms//multi_agent_system.png" alt="MY ALT TEXT" />
+            <img src="meta_thinking_llms//multi_agent_system.png" alt="MY ALT TEXT" />
             <h2 class="subtitle has-text-centered">
-            The diagram illustrates a multi-agent system where a high-level agent breaks down tasks and communicates with low-level agents to execute them. The high-level agent predicts and adjusts strategies using ToM, while low-level agents provide feedback through task execution. Reflection and adaptation enable continuous improvement by refining strategies based on outcomes.
+              The diagram illustrates a multi-agent system where a high-level agent breaks down tasks and communicates
+              with low-level agents to execute them. The high-level agent predicts and adjusts strategies using ToM,
+              while low-level agents provide feedback through task execution. Reflection and adaptation enable
+              continuous improvement by refining strategies based on outcomes.
               <!-- Caption -->
             </h2>
           </div>
           <div class="item">
             <!-- Your image here -->
-            <img src="static/meta_thinking_llms/Cot.png" alt="MY ALT TEXT" />
+            <img src="meta_thinking_llms/Cot.png" alt="MY ALT TEXT" />
             <h2 class="subtitle has-text-centered">
-            A COT flowchart adapted from the arithmetic examples. The model uses explicit reasoning steps, checks for errors, and revises before returning the final result.
+              A COT flowchart adapted from the arithmetic examples. The model uses explicit reasoning steps, checks for
+              errors, and revises before returning the final result.
               <!-- Caption -->
             </h2>
           </div>
@@ -178,12 +196,12 @@
   <!-- End image carousel -->
 
 
-<!-- 
+  <!-- 
   <section class="section hero is-small">
     <div class="hero-body">
       <div class="container">
         <h2 class="title is-3 is is-centered">Flow Diagram</h2>
-        <img src="static/meta_thinking_llms/meta_thinking.png" alt="Flow Diagram" style="width:100%;" />
+        <img src="meta_thinking_llms/meta_thinking.png" alt="Flow Diagram" style="width:100%;" />
         <h2 class="subtitle has-text-centered">
         Overview of RL Techniques Enabling Meta-Thinking in Language Models
         </h2>
@@ -198,7 +216,7 @@
       <div class="container">
         <h2 class="title">Poster</h2>
 
-        <iframe src="static/hierarchical_wireless/hierarchical_wireless.pdf" width="100%" height="550">
+        <iframe src="hierarchical_wireless/hierarchical_wireless.pdf" width="100%" height="550">
         </iframe>
 
       </div>
@@ -219,17 +237,6 @@
     </div>
   </section>
   <!--End BibTex citation -->
-
-  <script>
-
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('footer-container').innerHTML = html;
-      });
-  </script>
-  <div id="footer-container"></div>
-
 
 </body>
 
