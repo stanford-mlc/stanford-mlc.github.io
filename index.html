@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners -->
   <meta name="description" content="Stanford MLC Lab led by Prof. John M. Cioffi">
   <meta property="og:title" content="Stanford MLC Lab [Cioffi Group]" />
   <meta property="og:description"
@@ -19,7 +18,7 @@
   <meta name="twitter:image" content="static/images/mlc_crop.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="keywords"
-    content="Machine Learning, Dynamic Spectrum Management, Communications, John Cioffi, Stanford, Research, Deep Learning, 5G, 6G, Signal Processing">
+    content="Machine learning, dynamic spectrum management, communications, John Cioffi, Stanford, research, deep Learning, 5G, 6G, signal processing">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Stanford MLC Lab [Cioffi Group]</title>
@@ -33,12 +32,15 @@
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/navbar.css">
+  <link rel="stylesheet" href="static/css/footer.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script src="static/js/navbar.js"></script>
 
   <style>
     body {
@@ -124,6 +126,55 @@
       display: inline-block;
     }
 
+    .paper-card-award {
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      height: 100%;
+      border-radius: 8px;
+      border: 2px solid #D4AF37;
+      background: linear-gradient(135deg, #FDF8E1 0%, #F8F0D6 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .paper-card-award::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #D4AF37, #FFD700, #B8860B, #D4AF37);
+      background-size: 200% 100%;
+      animation: shimmer 3s ease-in-out infinite;
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: 200% 0;
+      }
+
+      100% {
+        background-position: -200% 0;
+      }
+    }
+
+    .paper-card-award:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 35px rgba(212, 175, 55, 0.3);
+    }
+
+    .paper-card-award .paper-title {
+      color: #8C1515;
+      font-weight: 700;
+      position: relative;
+    }
+
+    .paper-card-award .paper-venue {
+      color: #B8860B;
+      font-weight: 600;
+      position: relative;
+    }
+
     .research-areas {
       background: #8C1515;
       color: white;
@@ -144,36 +195,6 @@
       backdrop-filter: blur(10px);
     }
 
-    .global-footer {
-      background-color: #8c1515;
-      color: white;
-      padding: 2rem 0;
-      margin-top: 0rem;
-    }
-
-    .global-footer a {
-      color: #ffd9d9;
-    }
-
-    .global-footer a:hover {
-      color: white;
-    }
-
-    .global-footer ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .global-footer li {
-      display: inline;
-      margin-right: 1.5rem;
-    }
-
-    .global-footer .copyright {
-      margin-top: 1rem;
-      font-size: 0.9rem;
-    }
 
     .hero-gradient {
       background: white;
@@ -183,47 +204,6 @@
       font-size: 0.9rem;
       padding: 0.58em 1.25em;
       height: 2.28em;
-    }
-
-    /* Navigation Styles */
-    .main-nav {
-      background-color: #8C1515;
-      padding: 0;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .nav-tabs {
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .nav-tab {
-      margin: 0;
-    }
-
-    .nav-tab a {
-      display: block;
-      padding: 1rem 2rem;
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      transition: background-color 0.3s ease;
-      border-bottom: 3px solid transparent;
-    }
-
-    .nav-tab a:hover {
-      background-color: rgba(255, 255, 255, 0.1);
-    }
-
-    .nav-tab.active a {
-      background-color: rgba(255, 255, 255, 0.2);
-      border-bottom-color: white;
     }
   </style>
 </head>
@@ -334,7 +314,7 @@
   <!-- Publications Section -->
   <section class="section recent-publications">
     <div class="container is-max-desktop">
-      <div class="has-text-centered" style="margin-bottom: 2.5rem;">
+      <div class="has-text-centered" style="margin-bottom: 3rem;">
         <h2 class="title is-3 has-text-white" style="margin-bottom: 2.75rem;">Recent Publications</h2>
         <p class="subtitle is-5 has-text-white" style="font-size: 1.1em;">Explore our latest research contributions</p>
       </div>
@@ -404,7 +384,7 @@
 
         <!-- Paper 3: RAG Wireless -->
         <div class="column is-6">
-          <div class="box paper-card">
+          <div class="box paper-card-award">
             <h3 class="paper-title">
               <a href="recents/rag_wireless.html" class="has-text-dark" target="_blank">
                 Retrieval Augmented Generation with Multi-Modal LLM Framework for Wireless Environments
@@ -413,8 +393,7 @@
             <p class="paper-authors">
               Muhammad Ahmed Mohsin*, Ahsan Bilal*, Sagnik Bhattacharya, John M. Cioffi
             </p>
-            <p class="paper-venue">International Conference on Communications 2025 Workshop</p>
-            <span class="award-badge">Best Workshop Paper Award</span>
+            <p class="paper-venue">IEEE ICC 2025 Wkshps</p>
             <div class="buttons" style="margin-top: 1rem;">
               <a href="recents/rag_wireless.html" class="button is-macro"
                 style="background-color: #8C1515; color: white;" target="_blank">

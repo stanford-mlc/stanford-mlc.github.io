@@ -1,0 +1,31 @@
+/* Global Footer Styles */
+.global-footer {
+  background-color: #8c1515;
+  color: white;
+  padding: 2rem 0;
+  margin-top: 0rem;
+}
+
+.global-footer a {
+  color: #ffd9d9;
+}
+
+.global-footer a:hover {
+  color: white;
+}
+
+.global-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.global-footer li {
+  display: inline;
+  margin-right: 1.5rem;
+}
+
+.global-footer .copyright {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}

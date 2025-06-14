@@ -1,0 +1,150 @@
+/* Navigation Styles */
+.main-nav {
+  background-color: #8C1515;
+  padding: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-nav:hover {
+  box-shadow: 0 4px 20px rgba(140, 21, 21, 0.3);
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.nav-tab {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-tab::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent);
+  transition: left 0.6s ease;
+}
+
+.nav-tab:hover::before {
+  left: 100%;
+}
+
+.nav-tab a {
+  display: block;
+  padding: 1rem 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-bottom: 3px solid transparent;
+  transform: translateY(0);
+}
+
+.nav-tab a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(45deg, #fff, #ffd9d9);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.nav-tab a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  color: #ffd9d9;
+}
+
+.nav-tab a:hover::after {
+  width: 80%;
+}
+
+.nav-tab.active a {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: white;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-tab.active a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, white, transparent);
+  animation: activeShimmer 2s ease-in-out infinite;
+}
+
+@keyframes activeShimmer {
+
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.nav-tab.active a:hover {
+  transform: translateY(-1px);
+}
+
+/* Mobile Navigation Animations */
+@media (max-width: 768px) {
+  .nav-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-tab {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-tab:last-child {
+    border-bottom: none;
+  }
+
+  .nav-tab a {
+    padding: 0.75rem 1rem;
+    transition: all 0.2s ease;
+  }
+
+  .nav-tab a:hover {
+    transform: translateX(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-tab.active a:hover {
+    transform: translateX(5px);
+  }
+}
+
