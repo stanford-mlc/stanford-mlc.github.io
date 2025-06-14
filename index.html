@@ -34,6 +34,7 @@
   <link rel="stylesheet" href="static/css/index.css">
   <link rel="stylesheet" href="static/css/navbar.css">
   <link rel="stylesheet" href="static/css/footer.css">
+  <link rel="stylesheet" href="static/css/home.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
@@ -47,164 +48,6 @@
       font-family: 'Source Serif 4', serif;
     }
 
-    .lab-logo {
-      max-height: 200px;
-      margin-bottom: 1rem;
-      margin-top: 1rem;
-    }
-
-    .hero-content {
-      padding: 2rem 0;
-    }
-
-    .lab-description {
-      color: #000000;
-      font-size: 1.1rem;
-      max-width: 600px;
-      margin: 1rem auto;
-      line-height: 1.5;
-    }
-
-    .lab-director {
-      color: #8C1515;
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
-      font-weight: 600;
-    }
-
-    .lab-director a {
-      color: #8C1515;
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: border-bottom 0.2s ease;
-    }
-
-    .lab-director a:hover {
-      border-bottom: 1px solid #8C1515;
-    }
-
-    .paper-card {
-      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-      height: 100%;
-      border-radius: 8px;
-      border: 1px solid #e1e5e9;
-    }
-
-    .paper-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    }
-
-    .paper-title {
-      color: #2c3e50;
-      font-weight: 600;
-      font-size: 1.1rem;
-      line-height: 1.4;
-      margin-bottom: 1rem;
-    }
-
-    .paper-authors {
-      color: #7f8c8d;
-      font-size: 0.95rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .paper-venue {
-      color: #8C1515;
-      font-weight: 500;
-      font-size: 0.95rem;
-    }
-
-    .award-badge {
-      background: linear-gradient(135deg, #ff6b6b, #feca57);
-      color: white;
-      padding: 0.3rem 0.75rem;
-      border-radius: 6px;
-      font-size: 0.75rem;
-      font-weight: 600;
-      margin-top: 0.5rem;
-      display: inline-block;
-    }
-
-    .paper-card-award {
-      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-      height: 100%;
-      border-radius: 8px;
-      border: 2px solid #D4AF37;
-      background: linear-gradient(135deg, #FDF8E1 0%, #F8F0D6 100%);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .paper-card-award::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 4px;
-      background: linear-gradient(90deg, #D4AF37, #FFD700, #B8860B, #D4AF37);
-      background-size: 200% 100%;
-      animation: shimmer 3s ease-in-out infinite;
-    }
-
-    @keyframes shimmer {
-      0% {
-        background-position: 200% 0;
-      }
-
-      100% {
-        background-position: -200% 0;
-      }
-    }
-
-    .paper-card-award:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 35px rgba(212, 175, 55, 0.3);
-    }
-
-    .paper-card-award .paper-title {
-      color: #8C1515;
-      font-weight: 700;
-      position: relative;
-    }
-
-    .paper-card-award .paper-venue {
-      color: #B8860B;
-      font-weight: 600;
-      position: relative;
-    }
-
-    .research-areas {
-      background: #8C1515;
-      color: white;
-    }
-
-    .recent-publications {
-      background: #8C1515;
-      color: white;
-    }
-
-    .area-tag {
-      background: rgba(255, 255, 255, 0.2);
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      margin: 0.25rem;
-      display: inline-block;
-      backdrop-filter: blur(10px);
-    }
-
-
-    .hero-gradient {
-      background: white;
-    }
-
-    .button.is-macro {
-      font-size: 0.9rem;
-      padding: 0.58em 1.25em;
-      height: 2.28em;
-    }
   </style>
 </head>
 
@@ -239,16 +82,17 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <img src="static/images/mlc_crop.png" alt="Stanford MLC Lab" class="lab-logo">
+            <img src="static/images/mlc_crop_hzontal.png" alt="Stanford MLC Lab" class="lab-logo">
             <p class="lab-description">
               Our lab focuses on developing novel machine learning algorithms for next-generation wireless systems,
               communications modulation and coding, signal processing and communication theory.
             </p>
-            <p class="lab-director">
-              Director: <a href="https://cioffi-group.stanford.edu/" target="_blank">John M. Cioffi</a><br>
-              <span style="font-size: 1.1rem; font-weight: 400; color: #666;">Hitachi Professor Emeritus of Engineering
-                [Recalled]</span>
-            </p>
+            <div class="director-card has-text-centered">
+              <p style="font-size: 1.1rem; margin: 0;">
+                <strong>Director: John M. Cioffi</strong><br>
+                Hitachi Professor Emeritus of Engineering [Recalled]
+              </p>
+            </div>
           </div>
         </div>
       </div>
