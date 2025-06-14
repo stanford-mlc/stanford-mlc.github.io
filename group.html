@@ -44,6 +44,184 @@
     body {
       font-family: 'Source Serif 4', serif;
     }
+
+    .section-title {
+      margin-bottom: 0rem;
+    }
+
+    .pi-section {
+      background-color: #7e1616;
+      border-bottom: 1px solid #dbdbdb;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    .pi-image {
+      max-width: 256px;
+      margin: auto;
+    }
+
+    .member-card {
+      background-color: #fff;
+      border: 1px solid #dbdbdb;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .member-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .phd-student-card {
+      background: #8c1515;
+      color: white;
+    }
+
+    .phd-student-card .title {
+      color: white !important;
+    }
+
+    .phd-student-card .email-link a {
+      color: #fff !important;
+      opacity: 0.9;
+    }
+
+    .phd-student-card .email-link a:hover {
+      opacity: 1;
+    }
+
+    .phd-student-card .member-links a {
+      color: #fff !important;
+      opacity: 0.8;
+    }
+
+    .phd-student-card .member-links a:hover {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+
+    .member-image {
+      margin-bottom: 0.75rem;
+    }
+
+    .member-image .image {
+      margin: 0 auto 0.75rem auto;
+    }
+
+    .member-image .image.is-172x172 {
+      width: 172px;
+      height: 172px;
+    }
+
+    .rounded-rect {
+      border-radius: 16px !important;
+    }
+
+    .phd-student-card .member-image .image img {
+      border: 6px solid white;
+    }
+
+    .member-card:not(.phd-student-card) .member-image .image img {
+      border: 6px solid #8c1515;
+    }
+
+    .member-info .title {
+      margin-bottom: 0.25rem !important;
+      min-height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .member-info .subtitle {
+      margin-top: 0 !important;
+      margin-bottom: 1rem !important;
+      font-size: 0.9rem;
+    }
+
+    .email-link a {
+      color: #3273dc;
+    }
+
+    .email-link a:hover {
+      color: #8c1515;
+    }
+
+    .member-links a {
+      color: #363636;
+      margin: 0 0.5rem;
+    }
+
+    .member-links a:hover {
+      color: #8c1515;
+    }
+
+    .member-links .icon {
+      font-size: 1.5rem;
+    }
+
+    .alumni-section {
+      background-color: #f5f5f5;
+    }
+
+    .table-container {
+      overflow-x: auto;
+    }
+
+    .fancy-table {
+      background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      border: none;
+    }
+
+    .fancy-table table {
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .fancy-table thead th {
+      background: linear-gradient(135deg, #8c1515 0%, #7e1616 100%);
+      color: white;
+      font-weight: 600;
+      border: none;
+      padding: 1.2rem 1rem;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 0.5px;
+    }
+
+    .fancy-table tbody tr {
+      transition: all 0.3s ease;
+      border: none;
+    }
+
+    .fancy-table tbody tr:hover {
+      background-color: #fdf5f5;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(140, 21, 21, 0.1);
+    }
+
+    .fancy-table tbody td {
+      border: none;
+      padding: 1rem;
+      vertical-align: middle;
+      border-bottom: 1px solid #f1f3f4;
+    }
+
+    .fancy-table tbody tr:last-child td {
+      border-bottom: none;
+    }
   </style>
 </head>
 
@@ -66,37 +244,790 @@
           <a href="publications.html">Publications</a>
         </li>
         <li class="nav-tab">
-          <a href="contact.html">Contact</a>
+          <a href="contact.html">Contact Us</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <!-- Main Content Section -->
+  <!-- Title Section -->
   <section class="section">
     <div class="container is-max-desktop">
-      <div class="has-text-centered" style="margin-bottom: 3rem;">
-        <h1 class="title is-2">Group</h1>
-        <p class="subtitle is-4">Coming Soon</p>
+      <div class="has-text-centered section-title">
+        <h1 class="title is-2">Our Group</h1>
+        <p class="subtitle is-4">Meet the team behind our research</p>
       </div>
+    </div>
+  </section>
 
-      <div class="columns is-centered">
-        <div class="column is-8 has-text-centered">
+  <!-- Faculty Section -->
+  <section class="section pi-section has-background-light pt-6 pb-6">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered" style="margin-bottom: 3rem; color: #8c1515;">Faculty</h2>
+      <div class="columns is-vcentered is-multiline">
+        <div class="column is-12 is-4-desktop has-text-centered">
+          <figure class="image pi-image">
+            <img class="is-rounded" src="group/jcioffi.jpg" alt="Prof. John M. Cioffi">
+          </figure>
+        </div>
+        <div class="column is-12 is-8-desktop">
+          <h3 class="title is-3">Prof. John M. Cioffi</h3>
+          <h4 class="subtitle is-5 has-text-grey">Hitachi Professor Emeritus of Engineering [Recalled]</h4>
           <div class="content">
-            <p class="is-size-5" style="color: #666; line-height: 1.6;">
-              This page will introduce our distinguished faculty, talented researchers, and graduate students who drive
-              innovation in machine learning and communications.
+            <p>
+              Prof. Cioffi's research focuses on high-performance digital transmission. He is widely recognized as the
+              "Father of DSL" for his pioneering work in Discrete Multi-tone (DMT) modulation, the technology that
+              became the global standard for DSL services. His current research interests include machine learning
+              applications in communications, dynamic spectrum management (DSM), and next-generation wireless systems
+              (5G/6G).
             </p>
-            <div class="buttons is-centered" style="margin-top: 2rem;">
-              <a href="index.html" class="button" style="background-color: #8C1515; color: white;">
-                <span class="icon">
-                  <i class="fas fa-home"></i>
-                </span>
-                <span>Return to Home</span>
-              </a>
+          </div>
+          <div class="buttons">
+            <a href="https://cioffi-group.stanford.edu/" target="_blank" class="button"
+              style="background-color: #8c1515; color: white;">
+              <span class="icon"><i class="fas fa-globe"></i></span>
+              <span>Website</span>
+            </a>
+            <a href="https://engineering.stanford.edu/people/john-cioffi" target="_blank" class="button is-light">
+              <span class="icon"><i class="fas fa-university"></i></span>
+              <span>Stanford Profile</span>
+            </a>
+            <a href="https://www.linkedin.com/in/john-m-cioffi-74950b15/" target="_blank" class="button is-light">
+              <span class="icon"><i class="fab fa-linkedin"></i></span>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/John_Cioffi" target="_blank" class="button is-light">
+              <span class="icon"><i class="fab fa-wikipedia-w"></i></span>
+              <span>Wikipedia</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Current Members Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered section-title">Current Members</h2>
+
+      <!-- PhD Students -->
+      <h3 class="title is-4 has-text-centered" style="margin-bottom: 1rem; margin-top: 2rem;">PhD Students</h3>
+      <div class="columns is-centered is-multiline">
+        <div class="column is-4">
+          <div class="member-card phd-student-card">
+            <div class="member-image">
+              <figure class="image is-172x172">
+                <img class="rounded-rect" src="group/sbhattacharya.jpg" alt="Sagnik Bhattacharya">
+              </figure>
+            </div>
+            <div class="member-info">
+              <p class="title is-4">Sagnik Bhattacharya</p>
+              <p class="subtitle is-6 email-link"><a href="mailto:sagnikb@stanford.edu">sagnikb@stanford.edu</a></p>
+              <div class="member-links">
+                <a href="https://www.linkedin.com/in/sagnik-bhattacharya-8316977a/" target="_blank"><span
+                    class="icon"><i class="fab fa-linkedin"></i></span></a>
+                <a href="https://github.com/sagnibak" target="_blank"><span class="icon"><i
+                      class="fab fa-github"></i></span></a>
+              </div>
             </div>
           </div>
         </div>
+        <div class="column is-4">
+          <div class="member-card phd-student-card">
+            <div class="member-image">
+              <figure class="image is-172x172">
+                <img class="rounded-rect" src="group/muahmed.jpg" alt="Muhammad Ahmed Mohsin">
+              </figure>
+            </div>
+            <div class="member-info">
+              <p class="title is-4">Muhammad Ahmed Mohsin</p>
+              <p class="subtitle is-6 email-link"><a href="mailto:muahmed@stanford.edu">muahmed@stanford.edu</a></p>
+              <div class="member-links">
+                <a href="https://www.linkedin.com/in/ahmed-mohsin-2089231b9/" target="_blank"><span class="icon"><i
+                      class="fab fa-linkedin"></i></span></a>
+                <a href="https://github.com/ahmd-mohsin" target="_blank"><span class="icon"><i
+                      class="fab fa-github"></i></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="member-card phd-student-card">
+            <div class="member-image">
+              <figure class="image is-172x172">
+                <img class="rounded-rect" src="group/mumer.jpg" alt="Muhammad Umer">
+              </figure>
+            </div>
+            <div class="member-info">
+              <p class="title is-4">Muhammad Umer</p>
+              <p class="subtitle is-6 email-link"><a href="mailto:mumer@stanford.edu">mumer@stanford.edu</a></p>
+              <div class="member-links">
+                <a href="https://www.linkedin.com/in/muhd-umer/" target="_blank"><span class="icon"><i
+                      class="fab fa-linkedin"></i></span></a>
+                <a href="https://github.com/muhd-umer" target="_blank"><span class="icon"><i
+                      class="fab fa-github"></i></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visiting Scholars -->
+      <h3 class="title is-4 has-text-centered" style="margin-top: 2rem; margin-bottom: 1rem; color: #8c1515;">Visiting
+        Scholars</h3>
+      <div class="columns is-centered">
+        <div class="column is-4">
+          <div class="member-card">
+            <div class="member-image">
+              <figure class="image is-172x172">
+                <img class="rounded-rect" src="group/lfu.jpg" alt="Liqun Fu">
+              </figure>
+            </div>
+            <div class="member-info">
+              <p class="title is-4">Liqun Fu</p>
+              <p class="subtitle is-6">Xiamen University, China</p>
+              <p class="subtitle is-6 email-link"><a href="mailto:liqun@xmu.edu.cn"
+                  style="color: #8c1515;">liqun@xmu.edu.cn</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Former Visiting Professors Section -->
+  <section class="section" style="padding-top: 1rem;">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered section-title">Former Visiting Professors</h2>
+      <div class="table-container fancy-table">
+        <table class="table is-fullwidth">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Institution</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rony Saha</td>
+              <td>Brac University, Bangladesh</td>
+              <td><i>(rony107976 AT gmail DOT com)</i></td>
+            </tr>
+            <tr>
+              <td>Julian Cheng</td>
+              <td>University of British Columbia</td>
+              <td><i>(Julian.Cheng AT ubc DOT ca)</i></td>
+            </tr>
+            <tr>
+              <td>Waleed Al-Hanafy</td>
+              <td>Menoufia University, Egypt</td>
+              <td><i>(waleed_alhanafy AT yahoo DOT com)</i></td>
+            </tr>
+            <tr>
+              <td>Xiumin Shi</td>
+              <td>Beijing Institute of Technology</td>
+              <td><i>(shixm AT stanford DOT edu)</i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alumni Section -->
+  <section class="section alumni-section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered section-title">Alumni</h2>
+      <div class="table-container fancy-table">
+        <table class="table is-fullwidth">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Organization</th>
+              <th>Position</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>William L.</td>
+              <td>Abbott</td>
+              <td>Meta</td>
+              <td>Director of Wireless System Engineering</td>
+              <td>(billabbott AT meta DOT com)</td>
+            </tr>
+            <tr>
+              <td>Rajiv</td>
+              <td>Agarwal</td>
+              <td>Real Estate Aggregator</td>
+              <td>Self-Employed</td>
+              <td>(rajivag AT gmail DOT com)</td>
+            </tr>
+            <tr>
+              <td>Haleema</td>
+              <td>Mehmood</td>
+              <td>Meta</td>
+              <td>Wireless System Engineer</td>
+              <td>(hmehmood AT stanfordalumni DOT org)</td>
+            </tr>
+            <tr>
+              <td>Avneesh</td>
+              <td>Agrawal</td>
+              <td>Qualcomm Inc.</td>
+              <td>President, Qualcom India & South Asia</td>
+              <td>(aagrawal AT qualcomm DOT com)</td>
+            </tr>
+            <tr>
+              <td>Carlos</td>
+              <td>Aldana</td>
+              <td>Broadcom Corp.</td>
+              <td>Principal Scientist</td>
+              <td>(aldana AT dsl DOT stanford DOT edu)</td>
+            </tr>
+            <tr>
+              <td>Naofal</td>
+              <td>Al-Dhahir</td>
+              <td>The University of Texas at Dallas</td>
+              <td>Erik Jonsson Distinguished Professor</td>
+              <td>(aldhahir AT utdallas DOT edu)</td>
+            </tr>
+            <tr>
+              <td>Ghazi A</td>
+              <td>Al-rawi</td>
+              <td>Eastgate Gapital Group</td>
+              <td>Managing Partner</td>
+              <td>(g DOT alrawi AT eastgategroup DOT com)</td>
+            </tr>
+            <tr>
+              <td>James T.</td>
+              <td>Aslanis Jr.</td>
+              <td></td>
+              <td>VP</td>
+              <td>(james DOT aslanis AT sbcglobal DOT net)</td>
+            </tr>
+            <tr>
+              <td>Philip S.</td>
+              <td>Bednarz</td>
+              <td>ASSIA</td>
+              <td>EVP of Product Development</td>
+              <td>(philip DOT bednarz AT stanfordalumni DOT org)</td>
+            </tr>
+            <tr>
+              <td>Harry V.</td>
+              <td>Bims</td>
+              <td>BoughtStuff, Inc.</td>
+              <td></td>
+              <td>(harrybims AT me DOT com)</td>
+            </tr>
+            <tr>
+              <td>Mark H.</td>
+              <td>Brady</td>
+              <td>AT&T Labs</td>
+              <td>Principal Member of Technical Staff</td>
+              <td>(mhbrady AT dsl DOT stanford DOT edu)</td>
+            </tr>
+            <tr>
+              <td>Jungsub</td>
+              <td>Byun</td>
+              <td>AT&T Labs, Inc.</td>
+              <td>Principal Member of Technical Staff</td>
+              <td>(jbyun AT stanfordalumni DOT org)</td>
+            </tr>
+            <tr>
+              <td>Chiang-yu</td>
+              <td>Chen</td>
+              <td>ASSIA Inc.</td>
+              <td></td>
+              <td>(cchen AT assia-inc DOT com)</td>
+            </tr>
+            <tr>
+              <td>Ming-Yang</td>
+              <td>Chen</td>
+              <td>ASSIA Inc.</td>
+              <td></td>
+              <td>(chenmy AT stanford DOT edu)</td>
+            </tr>
+            <tr>
+              <td>Won-Joon</td>
+              <td>Choi</td>
+              <td>Samsung</td>
+              <td>Executive Vice President</td>
+              <td>(wjchoi AT dsl DOT stanford DOT edu)</td>
+            </tr>
+            <tr>
+              <td>Jacky S.</td>
+              <td>Chow</td>
+              <td>Alain Pinel Realtors</td>
+              <td>Realtor</td>
+              <td>(jacky AT jackyhome DOT com)</td>
+            </tr>
+            <tr>
+              <td>Peter S.</td>
+              <td>Chow</td>
+              <td>ASSIA Inc</td>
+              <td>VP of Product Delivery</td>
+              <td>(pchow AT assia-inc DOT com)</td>
+            </tr>
+            <tr>
+              <td>Aakanksha</td>
+              <td>Chowdhery</td>
+              <td></td>
+              <td></td>
+              <td>(achowdhery AT alumni DOT stanford DOT edu)</td>
+            </tr>
+            <tr>
+              <td>Kok-wui</td>
+              <td>Cheong</td>
+              <td>Marvell Semiconductor, Inc.</td>
+              <td></td>
+              <td>(kwcheong AT dsl DOT stanford DOT edu)</td>
+            </tr>
+            <tr>
+              <td>Seong Taek</td>
+              <td>Chung</td>
+              <td>Humanvest</td>
+              <td>CEO/Founder</td>
+              <td>(taek DOT chung AT humanvest DOT co)</td>
+            </tr>
+            <tr>
+              <td>COL Glen P.</td>
+              <td>Dudevoir</td>
+              <td>US Military Academy</td>
+              <td>Associate Professor, Signal Corps</td>
+              <td>(Glen DOT Dudevoir AT us DOT army DOT mil)</td>
+            </tr>
+            <tr>
+              <td>Amal</td>
+              <td>Ekbal</td>
+              <td>National Instruments</td>
+              <td>Senior R&D Engineer-RF and Communications</td>
+              <td>(ekbal AT dsl DOT stanford DOT edu)</td>
+            </tr>
+            <tr>
+              <td>John L.</td>
+              <td>Fan</td>
+              <td>Cardinal Blue Software</td>
+              <td>Co-Founder</td>
+              <td>(j.fan AT cardinalblue DOT com)</td>
+            </tr>
+            <tr>
+              <td>Kevin D.</td>
+              <td>Fisher</td>
+              <td>Sail Internet.</td>
+              <td>CEO</td>
+              <td>(kevinfisherinc at gmail dot com)</td>
+            </tr>
+            <tr>
+              <td>Jeannie Lee</td>
+              <td>Fang</td>
+              <td></td>
+              <td></td>
+              <td>(jeannie AT dsl DOT stanford DOT edu)</td>
+            </tr>
+            <tr>
+              <td>Paul</td>
+              <td>Fortier</td>
+              <td>Laval University FQRNT</td>
+              <td>VP Research and Innovation</td>
+              <td>(fortier AT gel DOT ulaval DOT ca)</td>
+            </tr>
+            <tr>
+              <td>George</td>
+              <td>Ginis</td>
+              <td>Sail Internet</td>
+              <td>CTO</td>
+              <td>(gginis AT gmail DOT com)</td>
+            </tr>
+            <tr>
+              <td>Minnie</td>
+              <td>Ho</td>
+              <td>Intel Corp.</td>
+              <td>Principal Engineer</td>
+              <td>(minnieho AT yahoo DOT com)</td>
+            </tr>
+            <tr>
+              <td>Louise M. C.</td>
+              <td>Hoo</td>
+              <td>Broadcom Corp.</td>
+              <td>Sr. Manager, Systems Design Engineering</td>
+              <td>(mclouise AT gmail DOT com)</td>
+            </tr>
+            <tr>
+              <td>Chansoo</td>
+              <td>Hwang</td>
+              <td>PhyTunes Inc.</td>
+              <td>CTO of Product Development</td>
+              <td>(cshwang AT assia-inc DOT com)</td>
+            </tr>
+            <tr>
+              <td>Krista S.</td>
+              <td>Jacobsen</td>
+              <td>Jacobsen IP Law</td>
+              <td>Attorney and Counselor at Law</td>
+              <td>(krista at jacobseniplaw dot com)</td>
+            </tr>
+            <tr>
+              <td>Sumanth</td>
+              <td>Jagannathan</td>
+              <td>Apple.</td>
+              <td>Director</td>
+              <td>(jsumanth AT gmail DOT com)</td>
+            </tr>
+            <tr>
+              <td>WoongJun (Edward)</td>
+              <td>Jang</td>
+              <td>Pinion Industries</td>
+              <td>CEO/Co-founder</td>
+              <td>(woongjun DOT jang AT gmail DOT com)</td>
+            </tr>
+            <tr>
+              <td>Sanjay</td>
+              <td>Kasturia</td>
+              <td>Teranetics</td>
+              <td>CEO</td>
+              <td>(sanjay AT kasturia DOT com)</td>
+            </tr>
+            <tr>
+              <td>Joonsuk</td>
+              <td>Kim</td>
+              <td>Apple / IEEE</td>
+              <td>Sr. Principal Architect / Vice Chair 802.11ac</td>
+              <td>(joonsuk at apple dot com)</td>
+            </tr>
+            <tr>
+              <td>Youngjae (Sean)</td>
+              <td>Kim</td>
+              <td>Apple, Inc.</td>
+              <td></td>
+              <td>(youngjae AT stanfordalumni DOT org)</td>
+            </tr>
+            <tr>
+              <td>Ryoulhee (Ryan)</td>
+              <td>Kwak</td>
+              <td>Uriverse Inc.</td>
+              <td>CEO</td>
+              <td>(ryankwak AT uriverse DOT com)</td>
+            </tr>
+            <tr>
+              <td>HyukJoon</td>
+              <td>Kwon</td>
+              <td>Samsung America</td>
+              <td>Staff Engineer</td>
+              <td>(hjkwon AT alumni DOT stanford DOT edu)</td>
+            </tr>
+            <tr>
+              <td>Joseph Paul</td>
+              <td>Lauer</td>
+              <td>Broadcom Corp.</td>
+              <td></td>
+              <td>(lauer AT dsl DOT stanford DOT edu)</td>
+            </tr>
+            <tr>
+              <td>Bin</td>
+              <td>Lee</td>
+              <td></td>
+              <td>Consultant</td>
+              <td>(lee_bin AT hotmail DOT com)</td>
+            </tr>
+            <tr>
+              <td>Inkyu</td>
+              <td>Lee</td>
+              <td>School of Electrical Engineering, Korea University</td>
+              <td>Professor</td>
+              <td>(inkyu AT korea DOT ac DOT kr)</td>
+            </tr>
+            <tr>
+              <td>Jungwon</td>
+              <td>Lee</td>
+              <td>Samsung US R&D Center</td>
+              <td>Senior Vice President</td>
+              <td>(jungwon AT alumni DOT stanford DOT edu)</td>
+            </tr>
+            <tr>
+              <td>Wooyul</td>
+              <td>Lee</td>
+              <td>ASSIA Inc.</td>
+              <td></td>
+              <td>(wooyul DOT lee AT gmail DOT com)</td>
+            </tr>
+            <tr>
+              <td>Achankeng</td>
+              <td>Leke</td>
+              <td>McKinsey & Company</td>
+              <td>Chair-Africa</td>
+              <td>(acha_leke AT mckinsey DOT com)</td>
+            </tr>
+            <tr>
+              <td>Yun</td>
+              <td>Liao</td>
+              <td>Apple Computer</td>
+              <td>Wireless System Engineer</td>
+              <td>(yunliao AT stanfordalumni DOT org)</td>
+            </tr>
+            <tr>
+              <td>Susan C.</td>
+              <td>Lin</td>
+              <td>General Atomics.</td>
+              <td>Principal Systems Architect</td>
+              <td>(slin AT stanfordalumni DOT org)</td>
+            </tr>
+            <tr>
+              <td>Hui-Ling</td>
+              <td>Lou</td>
+              <td>Marvell Semiconductor, Inc.</td>
+              <td></td>
+              <td>(lou AT stanfordalumni DOT org)</td>
+            </tr>
+            <tr>
+              <td>Vinay</td>
+              <td>Majjigi</td>
+              <td></td>
+              <td>iOS Systems Engineer</td>
+              <td>(vmajjigi AT stanfordalumni DOT org)</td>
+            </tr>
+            <tr>
+              <td>Ardavan</td>
+              <td>Maleki-Tehrani</td>
+              <td>ASSIA Inc.</td>
+              <td>VP Technology Partnerships</td>
+              <td>(ardavan AT dsl DOT stanford DOT edu)</td>
+            </tr>
+            <tr>
+              <td>Moshe</td>
+              <td>Malkin</td>
+              <td>PLX</td>
+              <td>Chief DSP Architect</td>
+              <td>(mmalkin AT gmain DOT com)</td>
+            </tr>
+            <tr>
+              <td>Cory S.</td>
+              <td>Modlin</td>
+              <td>Texas Instruments</td>
+              <td></td>
+              <td>(cmodlin AT stanfordalumni DOT org)</td>
+            </tr>
+            <tr>
+              <td>Mehdi</td>
+              <td>Mohseni</td>
+              <td>ASSIA Inc</td>
+              <td></td>
+              <td>(mmohseni AT assia-inc DOT com)</td>
+            </tr>
+            <tr>
+              <td>Rohit</td>
+              <td>Negi</td>
+              <td>Carnegie Mellon University</td>
+              <td>Professor</td>
+              <td>(negi AT ece DOT cmu DOT edu)</td>
+            </tr>
+            <tr>
+              <td>Jisung</td>
+              <td>Oh</td>
+              <td>Samsung Electronics</td>
+              <td>Principal Engineer, DMC R&D Center</td>
+              <td>(jisung0714 DOT oh AT samsung DOT com)</td>
+            </tr>
+            <tr>
+              <td>Peter</td>
+              <td>Okrah</td>
+              <td>General Dynamics C4 Systems</td>
+              <td>Technical Staff Engineer</td>
+              <td>(okrah AT stanfordalumni DOT org)</td>
+            </tr>
+            <tr>
+              <td>Tosin</td>
+              <td>Olatonbosun</td>
+              <td>ASSIA Inc.</td>
+              <td>Systems Engineer</td>
+              <td>(olutosin AT stanford DOT edu)</td>
+            </tr>
+            <tr>
+              <td>Borja</td>
+              <td>Peleato</td>
+              <td>Purdue University</td>
+              <td>Visiting Assistant Professor</td>
+              <td>(bpeleato AT purdue DOT edu)</td>
+            </tr>
+            <tr>
+              <td>Vahbod</td>
+              <td>Pourahmad</td>
+              <td></td>
+              <td></td>
+              <td>(vahbod AT alumni DOT stanford DOT edu)</td>
+            </tr>
+            <tr>
+              <td>Greg</td>
+              <td>Raleigh</td>
+              <td>Airgo Networks</td>
+              <td>President and CEO</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Wonjong</td>
+              <td>Rhee</td>
+              <td>Seoul National University</td>
+              <td>Associate Professor</td>
+              <td>(wrhee AT snu DOT ac DOT kr)</td>
+            </tr>
+            <tr>
+              <td>Antonio</td>
+              <td>Ruiz</td>
+              <td>InViVoVision Inc.</td>
+              <td>Co-Founder and Partner</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Atul</td>
+              <td>Salvekar</td>
+              <td>MSL Lab, Samsung</td>
+              <td>CTO / CSO</td>
+              <td>(atul_salvekar at yahoo dot com)</td>
+            </tr>
+            <tr>
+              <td>Nicholas P.</td>
+              <td>Sands</td>
+              <td></td>
+              <td>Consultant</td>
+              <td>(npsands AT pacbell DOT net)</td>
+            </tr>
+            <tr>
+              <td>Kibeom</td>
+              <td>Seong</td>
+              <td>Goldman Sachs</td>
+              <td>Vice President</td>
+              <td>(kseong1 AT gmail DOT com)</td>
+            </tr>
+            <tr>
+              <td>Kee-Bong</td>
+              <td>Song</td>
+              <td>Samsung Semiconductor Inc.</td>
+              <td>Senior Director</td>
+              <td>(keebong.s at samsung dot com)</td>
+            </tr>
+            <tr>
+              <td>Norman</td>
+              <td>Swenson</td>
+              <td>ClariPhy Communications</td>
+              <td>CTO</td>
+              <td>(norm DOT swenson AT clariphy DOT com)</td>
+            </tr>
+            <tr>
+              <td>Haleh</td>
+              <td>Tabrizi</td>
+              <td></td>
+              <td></td>
+              <td>(haleh DOT tabrizi AT gmail DOT com)</td>
+            </tr>
+            <tr>
+              <td>Jose</td>
+              <td>Tellado-Moudata-relo</td>
+              <td>Teranetics</td>
+              <td>Director Systems Design</td>
+              <td>(jtellado AT teranetics DOT com)</td>
+            </tr>
+            <tr>
+              <td>Dimitris-Alexandros</td>
+              <td>Toumpakaris</td>
+              <td>University of Patras</td>
+              <td>Assistant Professor</td>
+              <td>(dtouba AT gmail DOT com)</td>
+            </tr>
+            <tr>
+              <td>Jerry C.</td>
+              <td>Tu</td>
+              <td>InfiniteZ</td>
+              <td>Senior member of technical staff</td>
+              <td>(Jerry.c.tu AT gmail DOT com)</td>
+            </tr>
+            <tr>
+              <td>Paul</td>
+              <td>Voois</td>
+              <td>Clariphy Communications Inc.</td>
+              <td>Chief Strategy Officer</td>
+              <td>(paul DOT voois AT stanfordalumni DOT org)</td>
+            </tr>
+            <tr>
+              <td>Rick</td>
+              <td>Wesel</td>
+              <td>University of California at Los Angeles</td>
+              <td>Associate Professor</td>
+              <td>(wesel AT ee DOT ucla DOT edu)</td>
+            </tr>
+            <tr>
+              <td>Sarah Kate</td>
+              <td>Wilson</td>
+              <td>Santa Clara University</td>
+              <td>Associate Professor</td>
+              <td>(kate DOT wilson AT stanfordalumni DOT org)</td>
+            </tr>
+            <tr>
+              <td>Zi-Ning</td>
+              <td>Wu</td>
+              <td>Marvell Semiconductors, Inc.</td>
+              <td></td>
+              <td>(wu AT dsl DOT stanford DOT edu)</td>
+            </tr>
+            <tr>
+              <td>Shu-ping</td>
+              <td>Yeh</td>
+              <td>Intel</td>
+              <td>Research Scientist</td>
+              <td>(shu-ping.yeh AT intel DOT com)</td>
+            </tr>
+            <tr>
+              <td>Daxiao (David)</td>
+              <td>Yu</td>
+              <td>Marvell Semiconductor Inc.</td>
+              <td>Director of Engineering</td>
+              <td>(daxiao DOT yu AT gmail DOT com)</td>
+            </tr>
+            <tr>
+              <td>Wei</td>
+              <td>Yu</td>
+              <td>University of Toronto</td>
+              <td>Professor</td>
+              <td>(weiyu AT comm DOT utoronto DOT ca)</td>
+            </tr>
+            <tr>
+              <td>Steve Chaohuang</td>
+              <td>Zeng</td>
+              <td>Altobeam</td>
+              <td>President and CEO</td>
+              <td>(czeng AT stanfordalumni DOT org)</td>
+            </tr>
+            <tr>
+              <td>Rui</td>
+              <td>Zhang</td>
+              <td>National University of Singapore</td>
+              <td>Assistant Professor</td>
+              <td>(elezhang at nus dot edu dot sg)</td>
+            </tr>
+            <tr>
+              <td>Robert</td>
+              <td>Ziegler</td>
+              <td>Telecordia Technologies Applied Research</td>
+              <td>Executive Director</td>
+              <td>(rziegler AT monmouth DOT com)</td>
+            </tr>
+            <tr>
+              <td>Thomas Nicholas</td>
+              <td>Zogakis</td>
+              <td>Innovative Signal Analysis</td>
+              <td></td>
+              <td>(Nick.Zogakis at signal-analysis dot com)</td>
+            </tr>
+            <tr>
+              <td>Hao</td>
+              <td>Zou</td>
+              <td>Pacific Investment Management Company (PIMCO)</td>
+              <td>Vice President and Portfolio manager</td>
+              <td>(hao AT haozou DOT org)</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
@@ -117,14 +1048,14 @@
           <div id="bottom-text">
             <ul>
               <li class="home"><a href="https://www.stanford.edu/">SU Home</a></li>
-              <li class="maps alt"><a href="https://visit.stanford.edu/plan/maps.html">Maps &amp; Directions</a></li>
+              <li class="maps alt"><a href="https://visit.stanford.edu/plan/maps.html">Maps & Directions</a></li>
               <li class="search-stanford"><a href="https://www.stanford.edu/search/">Search Stanford</a></li>
               <li class="terms alt"><a href="https://www.stanford.edu/site/terms.html">Terms of Use</a></li>
               <li class="emergency-info"><a href="https://emergency.stanford.edu/">Emergency Info</a></li>
             </ul>
             <p class="copyright vcard" style="margin-top: 1rem;">© <span class="fn org">Stanford University</span>,
               <span class="adr"> <span class="locality">Stanford</span>, <span class="region">California</span> <span
-                  class="postal-code">94305</span></span>.&nbsp;&nbsp;
+                  class="postal-code">94305</span></span>.
               <span id="copyright-complaint"><a href="https://www.stanford.edu/group/security/dmca.html"
                   class="copyright-complaint">Copyright Complaints</a></span>
             </p>
