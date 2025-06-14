@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <!-- Meta tags for social media banners -->
-  <meta name="description"
-    content="Stanford MLC Lab led by Prof. John M. Cioffi">
+  <meta name="description" content="Stanford MLC Lab led by Prof. John M. Cioffi">
   <meta property="og:title" content="Stanford MLC Lab [Cioffi Group]" />
   <meta property="og:description"
     content="Research in machine learning, dynamic spectrum management, and communications at Stanford University" />
@@ -57,7 +56,7 @@
     }
 
     .lab-description {
-      color: #666;
+      color: #000000;
       font-size: 1.1rem;
       max-width: 600px;
       margin: 1rem auto;
@@ -104,21 +103,21 @@
 
     .paper-authors {
       color: #7f8c8d;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       margin-bottom: 0.5rem;
     }
 
     .paper-venue {
       color: #8C1515;
       font-weight: 500;
-      font-size: 0.85rem;
+      font-size: 0.95rem;
     }
 
     .award-badge {
       background: linear-gradient(135deg, #ff6b6b, #feca57);
       color: white;
-      padding: 0.25rem 0.5rem;
-      border-radius: 12px;
+      padding: 0.3rem 0.75rem;
+      border-radius: 6px;
       font-size: 0.75rem;
       font-weight: 600;
       margin-top: 0.5rem;
@@ -185,10 +184,74 @@
       padding: 0.58em 1.25em;
       height: 2.28em;
     }
+
+    /* Navigation Styles */
+    .main-nav {
+      background-color: #8C1515;
+      padding: 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-tabs {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .nav-tab {
+      margin: 0;
+    }
+
+    .nav-tab a {
+      display: block;
+      padding: 1rem 2rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+      border-bottom: 3px solid transparent;
+    }
+
+    .nav-tab a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-tab.active a {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-bottom-color: white;
+    }
   </style>
 </head>
 
 <body>
+
+  <!-- Navigation Section -->
+  <nav class="main-nav">
+    <div class="container is-max-desktop">
+      <ul class="nav-tabs">
+        <li class="nav-tab active">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="nav-tab">
+          <a href="research.html">Research</a>
+        </li>
+        <li class="nav-tab">
+          <a href="people.html">People</a>
+        </li>
+        <li class="nav-tab">
+          <a href="publications.html">Publications</a>
+        </li>
+        <li class="nav-tab">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- Hero Section -->
   <section class="hero hero-gradient">
@@ -233,7 +296,7 @@
   <!-- Achievements Section -->
   <section class="section is-light">
     <div class="container is-max-desktop">
-      <div class="has-text-centered" style="margin-bottom: 2rem;">
+      <div class="has-text-centered" style="margin-bottom: 1.5rem;">
         <h2 class="title is-3">Lab Leadership & Recognition</h2>
       </div>
       <div class="columns is-centered">
@@ -271,9 +334,9 @@
   <!-- Publications Section -->
   <section class="section recent-publications">
     <div class="container is-max-desktop">
-      <div class="has-text-centered" style="margin-bottom: 3rem;">
-        <h2 class="title is-3 has-text-white">Recent Publications</h2>
-        <p class="subtitle is-5 has-text-white">Explore our latest research contributions</p>
+      <div class="has-text-centered" style="margin-bottom: 2.5rem;">
+        <h2 class="title is-3 has-text-white" style="margin-bottom: 2.75rem;">Recent Publications</h2>
+        <p class="subtitle is-5 has-text-white" style="font-size: 1.1em;">Explore our latest research contributions</p>
       </div>
 
       <div class="columns is-multiline">
@@ -282,7 +345,7 @@
         <div class="column is-6">
           <div class="box paper-card">
             <h3 class="paper-title">
-              <a href="hierarchical_wireless.html" class="has-text-dark">
+              <a href="recents/hierarchical_wireless.html" class="has-text-dark" target="_blank">
                 Hierarchical Deep Reinforcement Learning for Spectrum Resource Optimization in Integrated Terrestrial
                 and Non-Terrestrial Networks
               </a>
@@ -292,8 +355,8 @@
             </p>
             <p class="paper-venue">AAAI'25 Workshop</p>
             <div class="buttons" style="margin-top: 1rem;">
-              <a href="hierarchical_wireless.html" class="button is-macro"
-                style="background-color: #8C1515; color: white;">
+              <a href="recents/hierarchical_wireless.html" class="button is-macro"
+                style="background-color: #8C1515; color: white;" target="_blank">
                 <span class="icon">
                   <i class="fas fa-eye"></i>
                 </span>
@@ -313,7 +376,7 @@
         <div class="column is-6">
           <div class="box paper-card">
             <h3 class="paper-title">
-              <a href="meta_thinking_llms.html" class="has-text-dark">
+              <a href="recents/meta_thinking_llms.html" class="has-text-dark" target="_blank">
                 Meta-Thinking in LLMs via Multi-Agent Reinforcement Learning: A Survey
               </a>
             </h3>
@@ -322,8 +385,8 @@
             </p>
             <p class="paper-venue">Submitted to IEEE Transactions on Artificial Intelligence</p>
             <div class="buttons" style="margin-top: 1rem;">
-              <a href="meta_thinking_llms.html" class="button is-macro"
-                style="background-color: #8C1515; color: white;">
+              <a href="recents/meta_thinking_llms.html" class="button is-macro"
+                style="background-color: #8C1515; color: white;" target="_blank">
                 <span class="icon">
                   <i class="fas fa-eye"></i>
                 </span>
@@ -343,7 +406,7 @@
         <div class="column is-6">
           <div class="box paper-card">
             <h3 class="paper-title">
-              <a href="rag_wireless.html" class="has-text-dark">
+              <a href="recents/rag_wireless.html" class="has-text-dark" target="_blank">
                 Retrieval Augmented Generation with Multi-Modal LLM Framework for Wireless Environments
               </a>
             </h3>
@@ -351,9 +414,10 @@
               Muhammad Ahmed Mohsin*, Ahsan Bilal*, Sagnik Bhattacharya, John M. Cioffi
             </p>
             <p class="paper-venue">International Conference on Communications 2025 Workshop</p>
-            <span class="award-badge">🎉 Best Workshop Paper Award 🎉</span>
+            <span class="award-badge">Best Workshop Paper Award</span>
             <div class="buttons" style="margin-top: 1rem;">
-              <a href="rag_wireless.html" class="button is-macro" style="background-color: #8C1515; color: white;">
+              <a href="recents/rag_wireless.html" class="button is-macro"
+                style="background-color: #8C1515; color: white;" target="_blank">
                 <span class="icon">
                   <i class="fas fa-eye"></i>
                 </span>
@@ -373,7 +437,7 @@
         <div class="column is-6">
           <div class="box paper-card">
             <h3 class="paper-title">
-              <a href="task_aware.html" class="has-text-dark">
+              <a href="recents/task_aware.html" class="has-text-dark" target="_blank">
                 Task and Perception-aware Distributed Source Coding for Correlated Speech under Bandwidth-constrained
                 Channels
               </a>
@@ -383,7 +447,8 @@
             </p>
             <p class="paper-venue">AAAI'25 Workshop</p>
             <div class="buttons" style="margin-top: 1rem;">
-              <a href="task_aware.html" class="button is-macro" style="background-color: #8C1515; color: white;">
+              <a href="recents/task_aware.html" class="button is-macro" style="background-color: #8C1515; color: white;"
+                target="_blank">
                 <span class="icon">
                   <i class="fas fa-eye"></i>
                 </span>
@@ -403,57 +468,21 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact Call-to-Action Section -->
   <section class="section">
     <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column is-10">
-          <div class="columns">
-            <div class="column is-6 has-text-centered">
-              <h2 class="title is-4">Contact Information</h2>
-              <div class="content" style="font-size: 1.1rem;">
-                <p><strong>Prof. John M. Cioffi</strong><br>
-                  Room 363, David Packard Electrical Engineering<br>
-                  350 Jane Stanford Way, MC 9515<br>
-                  Stanford, CA 94305-9515<br>
-                  Phone: +1 (650) 723-2150<br>
-                  <a href="mailto:cioffi@stanford.edu" style="color: #8C1515;">cioffi@stanford.edu</a>
-                </p>
-              </div>
-            </div>
-            <div class="column is-6 has-text-centered">
-              <h2 class="title is-4">Administrative Contact</h2>
-              <div class="content" style="font-size: 1.1rem;">
-                <p><strong>Helen (Wentong) Niu</strong><br>
-                  Administrative Assistant<br>
-                  Room 310, David Packard Electrical Engineering<br>
-                  350 Jane Stanford Way, MC 9515<br>
-                  Stanford, CA 94305-9515<br>
-                  Phone: +1 (650) 723-8121<br>
-                  <a href="mailto:helen.niu@stanford.edu" style="color: #8C1515;">helen.niu@stanford.edu</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="has-text-centered" style="margin-top: 2rem;">
-            <p class="is-size-5">
-              Interested in joining our research group or collaborating with us?
-            </p>
-            <div class="buttons is-centered" style="margin-top: 1.5rem;">
-              <a href="mailto:cioffi@stanford.edu" class="button" style="background-color: #8C1515; color: white;">
-                <span class="icon">
-                  <i class="fas fa-envelope"></i>
-                </span>
-                <span>Email Prof. Cioffi</span>
-              </a>
-              <a href="https://cioffi-group.stanford.edu/dsm/" target="_blank" class="button is-light">
-                <span class="icon">
-                  <i class="fas fa-flask"></i>
-                </span>
-                <span>Research Activities</span>
-              </a>
-            </div>
-          </div>
+      <div class="has-text-centered">
+        <h2 class="title is-3" style="margin-bottom: 1.5rem;">Join Our Research Group!</h2>
+        <p style="color: #666; margin-bottom: 1.5rem; font-size: 1.1em;">
+          Interested in joining our research group or collaborating with us?
+        </p>
+        <div class="buttons is-centered">
+          <a href="contact.html" class="button" style="background-color: #8C1515; color: white;">
+            <span class="icon">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span>Contact Us</span>
+          </a>
         </div>
       </div>
     </div>
