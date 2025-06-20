@@ -44,6 +44,14 @@
     body {
       font-family: 'Source Serif 4', serif;
     }
+    .research-card {
+      border-left: 4px solid #8C1515;
+      padding-left: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+    .research-card h3 {
+      margin-bottom: 0.5rem;
+    }
   </style>
 </head>
 
@@ -77,24 +85,69 @@
     <div class="container is-max-desktop">
       <div class="has-text-centered" style="margin-bottom: 3rem;">
         <h1 class="title is-2">Research</h1>
-        <p class="subtitle is-4">Coming Soon</p>
       </div>
 
       <div class="columns is-centered">
-        <div class="column is-8 has-text-centered">
-          <div class="content">
-            <p class="is-size-5" style="color: #666; line-height: 1.6;">
-              This page will showcase our ongoing research projects, methodologies, and breakthrough innovations in
-              machine learning for communications systems.
+        <div class="column is-10">
+          <!-- 1. Channel Estimation & Prediction -->
+          <div class="research-card">
+            <h3 class="title is-4">1. Channel Estimation and Channel Prediction</h3>
+            <p class="is-size-5" style="color:#555;">
+              We pioneer <em>Neural Gaussian Radio Fields (nGRF)</em>—a physics-aware framework that
+              replaces ray tracing with explicit 3-D Gaussian primitives. nGRF renders full MIMO channel
+              matrices in <strong>≈1 ms</strong> and trains in minutes, delivering up to <strong>10 dB</strong> SNR gains and
+              reducing pilot overhead by &gt;100×.  A complementary continual-learning pipeline
+              anchors parameters with replay, EWC, and synaptic-intelligence regularizers,
+              enabling <em>handover-robust</em> CSI prediction across heterogeneous cells—all on NVIDIA GPUs.
             </p>
-            <div class="buttons is-centered" style="margin-top: 2rem;">
-              <a href="index.html" class="button" style="background-color: #8C1515; color: white;">
-                <span class="icon">
-                  <i class="fas fa-home"></i>
-                </span>
-                <span>Return to Home</span>
-              </a>
-            </div>
+          </div>
+
+          <!-- 2. Neural minPMAC -->
+          <div class="research-card">
+            <h3 class="title is-4">2. Neural&nbsp;minPMAC &mdash; Non-Linear Precoder Design</h3>
+            <p class="is-size-5" style="color:#555;">
+              Neural minPMAC is a learned surrogate that maps channel matrices directly to optimal
+              <em>minPMAC</em> decoding orders and power allocations for multicarrier NOMA uplinks.
+              By distilling thousands of CVX-derived solutions into a compact network, it
+              eliminates iterative convex solvers and brings <strong>real-time, inference-only</strong>
+              non-linear precoding to embedded and cloud RAN accelerators.
+            </p>
+          </div>
+
+          <!-- 3. CUDA minPMAC -->
+          <div class="research-card">
+            <h3 class="title is-4">3. CUDA&nbsp;minPMAC &mdash; GPU-Accelerated Precoder Solver</h3>
+            <p class="is-size-5" style="color:#555;">
+              For scenarios where exact convex optimality is required, we implement a custom
+              <em>CUDA minPMAC</em> solver.  By parallelizing matrix factorizations and KKT updates
+              across tens of thousands of CUDA cores, the GPU version achieves
+              <strong>&gt;100×</strong> speed-ups over CPU-based CVX, enabling millisecond-scale scheduling loops
+              for 5G NR and Wi-Fi 7 access points.
+            </p>
+          </div>
+
+          <!-- 4. ML for Hybrid 5G Digital Twin -->
+          <div class="research-card">
+            <h3 class="title is-4">4. Machine Learning for Hybrid 5G Digital Twin</h3>
+            <p class="is-size-5" style="color:#555;">
+              We fuse nGRF-based channel engines, Neural minPMAC, and CUDA minPMAC
+              inside a GPU-native hybrid digital twin built atop NVIDIA Sionna and Aerial.
+              The twin streams differentiable RF simulations into reinforcement-learning agents,
+              jointly optimizing beamforming, spectrum slicing, and traffic steering across
+              terrestrial and non-terrestrial segments.  This closed-loop platform accelerates
+              6G research by allowing “train-in-twin, deploy-in-RAN” experimentation with
+              full PHY-to-MAC fidelity.
+            </p>
+          </div>
+
+          <!-- Return Home Button -->
+          <div class="buttons is-centered" style="margin-top: 2rem;">
+            <a href="index.html" class="button" style="background-color: #8C1515; color: white;">
+              <span class="icon">
+                <i class="fas fa-home"></i>
+              </span>
+              <span>Return to Home</span>
+            </a>
           </div>
         </div>
       </div>
