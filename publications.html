@@ -46,22 +46,44 @@
     }
 
     .publication-card {
-      background-color: #fff;
-      border: 1px solid #dbdbdb;
+      background: white;
+      border: 2px solid #8C1515;
       border-radius: 12px;
-      padding-left: 2rem;
-      padding-right: 2rem;
-      padding-top: 1.25rem;
-      padding-bottom: 1.25rem;
-      margin-bottom: 1rem;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(140, 21, 21, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .publication-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: transparent;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 0;
     }
 
     .publication-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      border-color: #8C1515;
     }
+
+    .publication-card:hover::before {
+      opacity: 1;
+    }
+
+    .publication-card * {
+      position: relative;
+      z-index: 1;
+    }
+
 
     .publication-title {
       font-size: 1.2rem;

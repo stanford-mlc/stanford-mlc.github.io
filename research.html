@@ -72,7 +72,6 @@
 
     .research-area-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 12px 32px rgba(140, 21, 21, 0.15);
       border-color: #8C1515;
     }
 
@@ -85,19 +84,6 @@
       z-index: 1;
     }
 
-    .research-area-card .glow-animation {
-      animation: glowPulse 2s ease-in-out infinite alternate;
-    }
-
-    @keyframes glowPulse {
-      0% {
-        box-shadow: 0 4px 12px rgba(140, 21, 21, 0.1), 0 0 0 0 rgba(140, 21, 21, 0.2);
-      }
-
-      100% {
-        box-shadow: 0 8px 24px rgba(140, 21, 21, 0.2), 0 0 20px 4px rgba(140, 21, 21, 0.1);
-      }
-    }
 
     .sub-research-card {
       background: #8C1515;
@@ -183,7 +169,7 @@
       <div class="columns is-centered">
         <div class="column is-10">
           <!-- 1. Channel Estimation & Prediction -->
-          <div class="research-area-card glow-animation">
+          <div class="research-area-card">
             <h3 class="title is-4" style="color:#8C1515" ;>Channel Estimation and Prediction</h3>
             <p style="color:#555; margin-bottom: 1.5rem; font-size: 1.1em;">
               This research area focuses on novel methods for modeling and predicting wireless channels by representing
@@ -224,7 +210,7 @@
           </div>
 
           <!-- 2. Non-Linear Precoder Design -->
-          <div class="research-area-card glow-animation">
+          <div class="research-area-card">
             <h3 class="title is-4" style="color:#8C1515" ;>Non-Linear Precoder Design</h3>
             <p style="color:#555; margin-bottom: 1.5rem; font-size: 1.1em;">
               This research area involves the design of novel non-linear precoding algorithms for uplink multi-carrier
@@ -260,7 +246,7 @@
           </div>
 
           <!-- 3. ML for Hybrid 5G Digital Twin -->
-          <div class="research-area-card glow-animation">
+          <div class="research-area-card">
             <h3 class="title is-4" style="color:#8C1515" ;>Digital Twins for Wireless Networks</h3>
             <p style="color:#555; margin-bottom: 1.5rem; font-size: 1.1em;">
               The primary objective of this research is creating a powerful, simulation-ready digital twin for 6G
