@@ -44,6 +44,77 @@
     body {
       font-family: 'Source Serif 4', serif;
     }
+
+    .publication-card {
+      background-color: #fff;
+      border: 1px solid #dbdbdb;
+      border-radius: 12px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .publication-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .publication-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #363636;
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+
+    .publication-authors {
+      color: #4a4a4a;
+      margin-bottom: 0.25rem;
+      font-size: 0.95rem;
+    }
+
+    .publication-venue {
+      color: #8c1515;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+
+    .publication-links {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .publication-link {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.85rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: 1px solid #dbdbdb;
+      color: #4a4a4a;
+    }
+
+    .publication-link:hover {
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+
+    .publication-link.primary {
+      background-color: #8c1515;
+      color: white;
+      border-color: #8c1515;
+    }
+
+    .publication-link.primary:hover {
+      background-color: #7e1616;
+      color: white;
+    }
+
   </style>
 </head>
 
@@ -75,69 +146,83 @@
   <!-- Main Content Section -->
   <section class="section">
     <div class="container is-max-desktop">
-      <div class="has-text-centered" style="margin-bottom: 3rem;">
-        <h1 class="title is-2">Publications</h1>
+      <div class="has-text-centered" style="margin-bottom: 2rem;">
+        <h1 class="title is-2" style="margin-bottom: 2.75rem;">Publications</h1>
+        <p class="subtitle is-4" style="font-size: 1.1em;">Below are recent publications from our group. For a
+          complete and exhaustive list, please visit:</p>
+        <a href="https://scholar.google.com/citations?hl=en&user=x5jbQkEAAAAJ&view_op=list_works&sortby=pubdate"
+          target="_blank" class="button" style="background-color: #8C1515; color: white;">
+          <span class="icon">
+            <i class="ai ai-google-scholar"></i>
+          </span>
+          <span>Google Scholar</span>
+        </a>
       </div>
 
       <div class="columns is-centered">
-        <div class="column is-8">
-          <div class="content">
-            <ul style="list-style-type: disc; margin-left: 1.2em; line-height: 1.6;">
-              <li>
-                <strong>Hierarchical Deep Reinforcement Learning for Adaptive Resource Management in Integrated Terrestrial and Non-Terrestrial Networks</strong><br>
-                MA&nbsp;Mohsin, H&nbsp;Rizwan, M&nbsp;Umer, S&nbsp;Bhattacharya, A&nbsp;Bilal, JM&nbsp;Cioffi<br>
-                <em>AAAI&nbsp;2025 – Machine Learning for Wireless Communications</em>
-              </li>
-              <li>
-                <strong>Retrieval Augmented Generation with Multi-Modal LLM Framework for Wireless Environments</strong><br>
-                MA&nbsp;Mohsin, A&nbsp;Bilal, S&nbsp;Bhattacharya, JM&nbsp;Cioffi<br>
-                <em>ICC&nbsp;2025 – IEEE International Conference on Communications</em>
-              </li>
-              <li>
-                <strong>Optimum Power-Subcarrier Allocation and Time-Sharing in Multicarrier NOMA Uplink</strong><br>
-                S&nbsp;Bhattacharya, K&nbsp;Rajabalifardi, MA&nbsp;Mohsin, JM&nbsp;Cioffi<br>
-                <em>ICASSP&nbsp;2025 – IEEE International Conference on Acoustics, Speech and Signal Processing</em>
-              </li>
-              <li>
-                <strong>Optimum Power Allocation for Low Rank Wi-Fi Channels: A Comparison with Deep RL Framework</strong><br>
-                MA&nbsp;Mohsin, S&nbsp;Bhattacharya, K&nbsp;Rajabalifardi, R&nbsp;Pote, JM&nbsp;Cioffi<br>
-                <em>ICC&nbsp;2025 – IEEE International Conference on Communications</em>
-              </li>
-              <li>
-                <strong>Task and Perception-aware Distributed Source Coding for Correlated Speech under Bandwidth-constrained Channels</strong><br>
-                S&nbsp;Bhattacharya, MA&nbsp;Mohsin, A&nbsp;Bilal, JM&nbsp;Cioffi<br>
-                <em>AAAI&nbsp;2025 – Machine Learning for Wireless Communications</em>
-              </li>
-              <li>
-                <strong>Optimal Power Allocation and Time Sharing in Low Rank Multi-carrier Wi-Fi Channels</strong><br>
-                S&nbsp;Bhattacharya, K&nbsp;Rajabalifardi, MA&nbsp;Mohsin, R&nbsp;Pote, JM&nbsp;Cioffi<br>
-                <em>IEEE Globecom Workshops (GC Wkshps) 2024</em>
-              </li>
-              <li>
-                <strong>Successive Interference Cancellation-aided Diffusion Models for Joint Channel Estimation and Data Detection in Low Rank Channel Scenarios</strong><br>
-                S&nbsp;Bhattacharya, MA&nbsp;Mohsin, K&nbsp;Rajabalifardi, JM&nbsp;Cioffi<br>
-                <em>ICASSP&nbsp;2025 – IEEE International Conference on Acoustics, Speech and Signal Processing</em>
-              </li>
-              <li>
-                <strong>An Information-Theoretic Efficient Capacity Region for Multi-User Interference Channel</strong><br>
-                S&nbsp;Bhattacharya, AR&nbsp;Gorle, MA&nbsp;Mohsin, JM&nbsp;Cioffi<br>
-                <em>arXiv preprint arXiv:2501.15013</em>
-              </li>
-              <li>
-                <strong>Continual Learning for Wireless Channel Prediction</strong><br>
-                MA&nbsp;Mohsin, M&nbsp;Umer, A&nbsp;Bilal, MA&nbsp;Jamshed, JM&nbsp;Cioffi<br>
-                <em>ICML&nbsp;2025 Workshop on Machine Learning for Wireless Communications</em>
-              </li>
-            </ul>
+        <div class="column is-10">
 
-            <div class="buttons is-centered" style="margin-top: 2rem;">
-              <a href="index.html" class="button" style="background-color: #8C1515; color: white;">
-                <span class="icon">
-                  <i class="fas fa-home"></i>
-                </span>
-                <span>Return to Home</span>
-              </a>
-            </div>
+          <!-- Publication Card 1 -->
+          <div class="publication-card">
+            <div class="publication-title">Hierarchical Deep Reinforcement Learning for Adaptive Resource Management in
+              Integrated Terrestrial and Non-Terrestrial Networks</div>
+            <div class="publication-authors">MA Mohsin, H Rizwan, M Umer, S Bhattacharya, A Bilal, JM Cioffi</div>
+            <div class="publication-venue">AAAI'25 Wkshps [AI4WCN]</div>
+          </div>
+
+          <!-- Publication Card 2 -->
+          <div class="publication-card">
+            <div class="publication-title">Retrieval Augmented Generation with Multi-Modal LLM Framework for Wireless
+              Environments</div>
+            <div class="publication-authors">MA Mohsin, A Bilal, S Bhattacharya, JM Cioffi</div>
+            <div class="publication-venue">IEEE ICC'25</div>
+          </div>
+
+          <!-- Publication Card 3 -->
+          <div class="publication-card">
+            <div class="publication-title">Optimum Power-Subcarrier Allocation and Time-Sharing in Multicarrier NOMA
+              Uplink</div>
+            <div class="publication-authors">S Bhattacharya, K Rajabalifardi, MA Mohsin, JM Cioffi</div>
+            <div class="publication-venue">IEEE ICASSP'25</div>
+          </div>
+
+          <!-- Publication Card 4 -->
+          <div class="publication-card">
+            <div class="publication-title">Optimum Power Allocation for Low Rank Wi-Fi Channels: A Comparison with Deep
+              RL Framework</div>
+            <div class="publication-authors">MA Mohsin, S Bhattacharya, K Rajabalifardi, R Pote, JM Cioffi</div>
+            <div class="publication-venue">IEEE ICC'25</div>
+          </div>
+
+          <!-- Publication Card 5 -->
+          <div class="publication-card">
+            <div class="publication-title">Task and Perception-aware Distributed Source Coding for Correlated Speech
+              under Bandwidth-constrained Channels</div>
+            <div class="publication-authors">S Bhattacharya, MA Mohsin, A Bilal, JM Cioffi</div>
+            <div class="publication-venue">AAAI'25 Wkshps [AI4WCN]</div>
+          </div>
+
+          <!-- Publication Card 6 -->
+          <div class="publication-card">
+            <div class="publication-title">Optimal Power Allocation and Time Sharing in Low Rank Multi-carrier Wi-Fi
+              Channels</div>
+            <div class="publication-authors">S Bhattacharya, K Rajabalifardi, MA Mohsin, R Pote, JM Cioffi</div>
+            <div class="publication-venue">IEEE GLOBECOM'24 Wkshps</div>
+          </div>
+
+          <!-- Publication Card 7 -->
+          <div class="publication-card">
+            <div class="publication-title">Successive Interference Cancellation-aided Diffusion Models for Joint Channel
+              Estimation and Data Detection in Low Rank Channel Scenarios</div>
+            <div class="publication-authors">S Bhattacharya, MA Mohsin, K Rajabalifardi, JM Cioffi</div>
+            <div class="publication-venue">IEEE ICASSP'25</div>
+          </div>
+
+          <!-- Publication Card 8 -->
+          <div class="publication-card">
+            <div class="publication-title">Continual Learning for Wireless Channel Prediction</div>
+            <div class="publication-authors">MA Mohsin, M Umer, A Bilal, MA Jamshed, JM Cioffi</div>
+            <div class="publication-venue">ICML'25 Wkshps [ML4Wireless]</div>
           </div>
         </div>
       </div>
